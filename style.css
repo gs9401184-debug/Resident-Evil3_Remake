@@ -5,9 +5,12 @@ header{
     padding: 30px;
 }
 body{
+    display: flex;
+    flex-direction: column;
     background-image: url(./img/Fundo.png);
     background-repeat: no-repeat;
     background-size: cover;
+    height: 100vh;
     
 }
 .container{
@@ -24,34 +27,80 @@ body{
     padding-left: 60px;
 }
 .imagem-titulo{
-    width: 166px;
-    height: 32px;
+   
+    width: 486px;
+    height: 95px;
 }
 main{
+    margin-left: 100px;
+    padding-top: 40px;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-
+    flex-direction: column;
+    flex-grow: 1;
 }
 .Videos img{
     width: 170px;
     height: 170px;
-    background-color: yellowgreen;
     transition: 0.5s ease;
     cursor: pointer;
 
 }
 .Videos:hover > :not(:hover){
-    opacity: 0.2;
+    opacity: 0.5;
 }
 .Videos img:hover{
     transform: scale(1.3);
     border: 4px solid #ffffff;
   
 }
+.elementos1{
+  
+    display: flex;
+    justify-content: space-between;
+
+}
+.elementos2{
+    margin-top: 150px;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 250px;
+}
+.texto{
+    width: 550px;
+    height: 185px;
+    color: #ffffff;
+    text-align: center;
+
+}
+.texto h1{
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.texto p{
+    font-size: 25px;
+    text-align: start;
+    width: 800px;
+    height: 120px;
+}
+.trailer img{
+    border: 3px solid #ffffff;
+
+}
+.trailer{
+    color: #ffffff;
+}
+button{
+    width: 155px;
+    height: 45px;
+    border-radius: 20px;
+    background-color:#F02A22 ;
+    color: white;
+}
 footer{
     display: flex;
     align-items:center;
     justify-content: center;
 
+}
+@media {
+    
 }
